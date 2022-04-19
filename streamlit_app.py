@@ -4,15 +4,15 @@ import streamlit as st
 from models import SUPPORTED_MODELS, bytes_to_array, prepare_image
 
 st.set_page_config(layout="wide")
-st.title(":camera: Computer vision app")
+st.title(":camera: SONORA")
 
 
 # Let user upload a picture
 with st.sidebar:
-    st.title("Upload a picture")
+    st.title("Upload a lymph node sonogram")
 
     upload_type = st.radio(
-        label="How to upload the picture",
+        label="How to upload the sonogram",
         options=(("From file", "From URL", "From webcam")),
     )
 
